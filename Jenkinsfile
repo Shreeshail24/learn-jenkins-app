@@ -58,6 +58,10 @@ pipeline {
                         }
                     }
 
+                    environment {
+                        CI_ENVIRONMENT_URL = 'https://soft-queijadas-2c1d2b.netlify.app'
+                    }
+
                     steps {
                         sh '''
                             npm install serve
